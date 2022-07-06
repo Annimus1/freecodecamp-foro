@@ -1,26 +1,25 @@
 import React from 'react'
 import '../styles/testimony.css'
 
-function Testimony(props){
+function Testimony({image,name,country,position,brand,testimony}){
   return(
     <div className='testimony-container'>
       <img 
         className='testimony-image' 
-        src={require(`../img/image-${props.image}.png`)} 
-        alt= 'testimony subject'
-      />
+        src={require(`../img/image-${image}.png`)} 
+        alt= {name + "'s testimony"} />
       
       <div className='testimony-text-container'>
         <p className='testimony-text-name'>
-          <strong>{props.name}</strong> in {props.country}
+          <strong>{name}</strong> in {country}
         </p>
   	    
         <p className='testimony-text-position'>
-          {props.position} at <strong>{props.brand}</strong>
+          {position} at <strong>{brand}</strong>
         </p>
   	    
         <p className='testimony'>
-          "{props.testimony}"
+          "{testimony}"
         </p>
       </div>
       
