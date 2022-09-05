@@ -9,8 +9,10 @@ function App() {
   
   const testimonies = [];
 
-  Data.forEach( (data) => {
-      testimonies.push(<Testimony {...data} />);
+  Data.forEach( (data,key) => {
+    key=data.name; 
+    console.log(data.testimony.indexOf('freeCodeCamp'.toLowerCase()))
+    testimonies.push(<Testimony {...data} />);
   });
 
   return (
