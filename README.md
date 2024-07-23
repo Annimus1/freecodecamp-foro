@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# FreeCode Camp Foro
+
+Basic react page based on [freeCode Camp](https://www.freecodecamp.org/) testimonies section.
+
+## Screenshot
+
+!["Screenshot](src/img/Screenshot.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
